@@ -16,7 +16,7 @@ library(ggplot2)
 library(shinythemes)
 
 # Reading the data ----
-europe <- readRDS("~/Library/CloudStorage/OneDrive-Persönlich/Master_Wirtschaft/Digital Skills/Shiny/Shiny_app/Data/europe.rds")
+europe <- readRDS("europe.rds")
 
 europe <-europe %>%
   mutate(AvgTemperatureC=(AvgTemperatureF-32)*(5/9))
